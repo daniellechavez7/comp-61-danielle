@@ -1,0 +1,56 @@
+class Car: 
+    def __init__(self, make, model, year): 
+        self.make = make 
+        self.model = model
+        self.year = year 
+
+
+    def get_car_info(self):
+        return f"{self.year}, {self.make}, {self.model}"
+    
+class Owner: 
+    def __init__(self, name, age): 
+        self.name = name 
+        self.age = age 
+        self.cars_owned = []
+
+    def purchase_car (self, car):
+        self.cars_owned.append(car)
+        print(self.name, 'just purchased a', car.get_car_info(),'.')
+
+    def show_owned_cars(self):
+        if len(self.cars_owned) == 0:
+            print(self.name, "doesn't own any cars yet.")
+        else:
+            print(self.name, 'owns the following cars:') 
+            for car in self.cars_owned:
+                print(car.get_car_info())
+    
+def main(): 
+    owner1 = Owner("Margo", 29)
+    owner2 = Owner("Agnes", 26)
+    owner3 = Owner("Bree", 23)
+    owner4 = Owner("Katie", 28)
+
+    car1 = Car("Acura","Integra", 2015)
+    car2 = Car("BMW","5 Series", 2019)
+    car3 = Car("Honda", "Accord", 2023)
+    car4 = Car("Nissan", "Sentra", 2020)
+    car5 = Car("Toyota", "Corolla", 2024)
+    car6 = Car("Audi", "A3 Premium", 2016 )
+
+    owner1.purchase_car(car4)
+    owner1.purchase_car(car5)
+    owner2.purchase_car(car1)
+    owner2.purchase_car(car2)
+    owner3.purchase_car(car3)
+    owner3.purchase_car(car6)
+
+
+    owner1.show_owned_cars()
+    owner2.show_owned_cars()
+    owner3.show_owned_cars()
+    owner4.show_owned_cars()
+
+if __name__ == "__main__":
+    main()

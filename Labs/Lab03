@@ -1,0 +1,72 @@
+print('Welcome to the List Operations Program')
+
+def printmenu():
+    print('Menu:')
+    print('1. Add a number to the list')
+    print('2. Remove a number from the list')
+    print('3. Insert a number at a specific position')
+    print('4. Pop a number from the list')
+    print('5. Find the sum, average, and maximum of the list')
+    print('6. Search for a number in the list')
+    print('7. Remove all odd numbers from the list')
+    print('8. Exit')
+
+def printlist():
+    print_list = input('Would You like to print the current list? (yes/no):' )
+    if (print_list == 'yes'):
+        if my_list: 
+            print("Current List:", my_list)
+        else: 
+            print("Current List Empty")
+
+choices = 0
+my_list = []
+
+while(choices != 8):
+    printmenu()
+    choices = int(input('Enter your choice:'))
+    if (choices == 1):
+        add = int(input('Enter a number: '))
+        my_list.append(add)
+    elif(choices == 2):
+        remove = int(input('Enter a number: '))
+        if remove in my_list:
+            my_list.remove(remove)
+        else: 
+            print('error')
+    elif(choices == 3):
+        position = int(input('Enter a position: '))
+        num = int(input('Enter a number: '))
+        if (position < 0): 
+            print('error')
+        else: 
+            my_list.insert(position, num)
+    elif(choices == 4):
+        popnumber = int(input('Enter a number: '))
+        if popnumber in my_list: 
+            my_list.pop(popnumber)
+        else: 
+            print('error')
+    elif(choices == 5):
+        if not my_list: 
+            print('Error List is Empty')
+        else:
+            total_sum = sum(my_list)  
+            average = total_sum / len(my_list)
+            maximum = max(my_list)
+            print('Total Sum:', total_sum)
+            print('Average:', average)
+            print('Maximum:', maximum)
+    elif(choices == 6):
+        search = int(input('Search for Number:'))
+        if search in my_list: 
+            index = my_list.index(search)
+            print (search, 'Found at Position', index)
+        else:
+            print ('Number', search, ' Was Not Found')
+    elif(choices == 7):
+        my_list = [num for num in my_list if num % 2 == 0]
+        print('Odd Numbers Removed')
+    printlist()
+               
+print('Thank you for Using the List Porgram. Goodbye!')
