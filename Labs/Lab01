@@ -1,0 +1,22 @@
+temperature_input = input("enter temperature: ")
+temperature = int(temperature_input)
+weatherCondition = input("enter weather: ")
+budget = float(input("enter budget: "))
+
+if (weatherCondition == 'sunny') and (temperature >= 75):
+    if (budget > 30): 
+        print ('go to the beach!')
+    else: 
+        print ('have a picnic in the park :)')
+
+if (weatherCondition == 'rainy'):
+    if (budget > 30):
+        print ('visit a museum :o')
+    else:
+        print ('stay in and watch a movie')
+
+if (weatherCondition == 'cloudy') and (temperature <= 60):
+    if (budget > 10):
+        print ('go to coffee shop and have a drink')
+    else: 
+        print ('stay in and bake :)')
