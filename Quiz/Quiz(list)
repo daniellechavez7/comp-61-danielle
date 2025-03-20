@@ -1,0 +1,31 @@
+def menu():
+    print("Menu")
+    print("1. Add an item to list")
+    print("2. Remove an item from list")
+    print("3. Exit")
+
+choices = 0
+my_list = []
+
+
+
+while (choices != 3):
+    menu()
+    choices = int(input("Enter your choice: "))
+    if (choices == 1):
+        add = input("What would you like to enter?")
+        my_list.append(add)
+        print("now you have", my_list)
+    if (choices == 2):
+        remove = input("What would you like to remove?")
+        my_list.remove(remove)
+        print("now you have", my_list)
+
+
+
+
+
+
+
+
+
