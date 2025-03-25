@@ -1,31 +1,8 @@
-class MenuProgram: 
+a_list = [0, 1, 2, 3, 4]
+two_d_list = [[0, 1, 2, 3, 4],
+             [5, 6, 7, 8, 9,],
+             [10, 11, 12, 13, 14],
+            ]
 
-    def __init__(self):
-        self.item_list = []
-        self.menu_option = 0
-
-
-    def show_menu(self): 
-        print("Menu")
-        print("1. add item")
-        print("2. remove item")
-        print("3. exit")
-        self.menu_option = int(input("Enter your choice?"))
-    
-    def display_output(self):
-        print(self.item_list)
-
-    def run(self):
-        while(self.menu_option != 3):
-            self.show_menu()
-            if(self.menu_option == 1):
-                item_name = input("enter a item:")
-                self.item_list.append(item_name)
-                self.display_output()
-            elif(self.menu_option == 2):
-                self.item_list.remove(self.item_list[-1])
-                self.display_output 
-
-
-program = MenuProgram()
-program.run()
+print(two_d_list)
+print(two_d_list[1])

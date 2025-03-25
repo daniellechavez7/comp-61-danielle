@@ -1,0 +1,21 @@
+line = ""
+for i in range(5):
+    for k in range(5):
+        line += "*"
+    print(line)
+    line = ""
+
+
+line = ""
+for i in range(5):
+    for j in range(5):
+        line += str(i) + str(j)
+    print(line)
+    line = ""
+
+
+# 2 -dimension lists
+a_list = [0, 1, 3, 4]
+print(a_list)             #2-dimension list
+a_list[2] = 10
+print(a_list[2])
