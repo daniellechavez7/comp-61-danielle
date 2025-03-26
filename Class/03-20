@@ -1,8 +1,24 @@
-a_list = [0, 1, 2, 3, 4]
-two_d_list = [[0, 1, 2, 3, 4],
-             [5, 6, 7, 8, 9,],
-             [10, 11, 12, 13, 14],
-            ]
+import random 
+num = random.randint(0,1)
 
-print(two_d_list)
-print(two_d_list[1])
+visual_two_d_list = []
+visual_line = []
+for i in range(3):
+    for j in range(3):
+        visual_line.append(random.randint(0,1))
+    visual_two_d_list.append("#")
+    visual_line = []
+
+print(visual_two_d_list)
+
+input_x = int(input("input x position: "))
+input_y = int(input("input y position: "))
+
+if (visual_two_d_list[input_x][input_y] == 1):
+    visual_two_d_list[input_x][input_y] = "X"
+    print("You lose :(")
+else: 
+    visual_two_d_list[input_x][input_y] = "_"
+    print("Keep going")
+
+print(visual_two_d_list)
