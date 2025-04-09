@@ -1,0 +1,32 @@
+two_d = [                   
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]]
+
+
+def sum_region(two_d):
+    total = 0
+    for num in two_d:
+        total += sum(num)
+    return total
+
+#Output: 45
+
+print(sum_region(two_d))
+
+
+def sum_region(grid, row=0):
+    if row >= len(grid):  # Base case: Stop when row exceeds the grid size
+        return 0
+
+    row_sum = sum(grid[row])  # Sum the current row
+    return row_sum + sum_region(grid, row + 1)  # Recursive call for the next row
+
+grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+total = sum_region(grid)
+print("Total sum:", total)  # Expected output: 45

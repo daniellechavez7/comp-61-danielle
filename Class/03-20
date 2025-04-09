@@ -1,24 +1,27 @@
-import random 
-num = random.randint(0,1)
+import random
 
+# Initialize a 3x3 grid with random 0s and 1s
 visual_two_d_list = []
-visual_line = []
 for i in range(3):
-    for j in range(3):
-        visual_line.append(random.randint(0,1))
-    visual_two_d_list.append("#")
-    visual_line = []
+    visual_line = [random.randint(0, 1) for j in range(3)]
+    visual_two_d_list.append(visual_line)  # Append a copy of the line
 
-print(visual_two_d_list)
+# Print the initial grid (for debugging)
+for row in visual_two_d_list:
+    print(row)
 
-input_x = int(input("input x position: "))
-input_y = int(input("input y position: "))
+# Get user input
+input_x = int(input("input x position (0-2): "))
+input_y = int(input("input y position (0-2): "))
 
-if (visual_two_d_list[input_x][input_y] == 1):
+# Check the cell and update it accordingly
+if visual_two_d_list[input_x][input_y] == 1:
     visual_two_d_list[input_x][input_y] = "X"
     print("You lose :(")
-else: 
+else:
     visual_two_d_list[input_x][input_y] = "_"
     print("Keep going")
 
-print(visual_two_d_list)
+# Print the updated grid
+for row in visual_two_d_list:
+    print(row)

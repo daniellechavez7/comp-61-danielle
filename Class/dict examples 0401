@@ -1,0 +1,100 @@
+a = [1, 1, 2, 3, "shawn", True]
+print(a[0])
+print(a[2])
+
+students = {}
+students ["Jose"] = {"Grade": "A+", "StudentID": 88445}
+students ["Shawn"] = {"Grade": "F", "StudentID": 88674}
+
+print(students)
+print("Jose:")
+
+print(f' Grade: {students ["Jose"]["Grade"]}')
+print(f' ID: {students["Jose"]["StudentID"]}')
+
+phone_price = {}
+phone_price['iphone'] = 1000
+phone_price['samsung'] = 800 
+phone_price['oneplus'] = 600
+
+print(phone_price)
+print(phone_price['samsung'])
+
+price_list = [1000,800,600]
+phone_list = ['iphone', 'samsung', 'oneplus']
+
+print(phone_list[0], price_list[0])
+
+
+class Test:
+    a = 1
+phone_price = {}
+phone_price['iphone'] = 1000
+phone_price['samsung'] = 800 
+phone_price['oneplus'] = Test()
+
+print(phone_price)
+print(phone_price['samsung'])
+
+price_list = [1000,800,600]
+phone_list = ['iphone', 'samsung', 'oneplus']
+
+print(phone_list[0], price_list[0])
+
+
+
+car_dict = {}
+car_dict['bmw series 3'] = 30000
+car_dict['honda civic'] = 26000
+car_dict['kia forte'] = 24000
+car_dict['toyota camry'] = 29000
+
+
+print(car_dict)
+
+for value in car_dict:
+    print(value)
+
+for key, value in car_dict.items():
+    print(key)
+    print(value)
+
+for key in car_dict.keys():
+    print(key)
+
+for key, value in car_dict.items():
+    if ( key == "bmw series 3" ):
+        print(value)
+
+
+students = {}
+students ["Jose"] = {"Grade": "A+", "StudentID": 88445}
+students ["Shawn"] = {"Grade": "F", "StudentID": 88674}
+students ['Bella'] = {"Grade": 'F', 'StudentID': 88273}
+students ['River'] = {"Grade": 'F', 'StudentID': 88028}
+students ['Bea'] = {'Grade': 'A+', 'StudentID': 88456}
+students ['Jay'] = {'Grade': 'F', 'StudentID': 88246}
+
+
+for key, value in students.items():
+    for info_key, info_value in value.items():
+        if (info_value == 'F'):
+            print(key)
+            print(value)
+
+
+print(students)
+print(students['Shawn'])
+students.clear()
+print(students)
+print(students.get('Shawn'))
+
+
+class studentInfo: 
+    def __init__(self, _grade, _student_id):
+        self.grade = 'F'
+        self.student_id = '-1'
+
+student_class_dict = {}
+student_class_dict ['Jose'] = studentInfo('A+')
+
