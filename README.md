@@ -1,6 +1,7 @@
 # Extra Credit Game
 
 Demo Video 
+https://youtu.be/p02hgs64m5Q 
 
 Setup:
 - Have pygame installed
