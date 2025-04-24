@@ -1,5 +1,8 @@
 # Extra Credit Game
 
+Suggestion 
+- animation for frog 
+
 Demo Video 
 https://youtu.be/p02hgs64m5Q 
 
