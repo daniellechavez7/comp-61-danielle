@@ -3,6 +3,8 @@
 Demo Video 
 https://youtu.be/p02hgs64m5Q 
 
+https://youtu.be/YJ7wvC92I-I
+
 Setup:
 - Have pygame installed
 - Run the game:
