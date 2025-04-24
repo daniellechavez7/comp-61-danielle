@@ -1,7 +1,9 @@
 # Extra Credit Game
 
 Suggestion 
-- animation for frog 
+- animation for frog
+- main menu - pause menu
+- instructions 
 
 Demo Video 
 https://youtu.be/p02hgs64m5Q 
