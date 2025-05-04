@@ -7,7 +7,7 @@ Setup:
   pip install pygame
   cd path/to/FrogHop
 python main.py
-
+go to Frog Hops folder and run with main.py
 
 Game Overview 
 - Game title: 
