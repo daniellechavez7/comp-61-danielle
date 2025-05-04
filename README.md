@@ -3,6 +3,12 @@
 Demo Video 
 https://youtu.be/txsAzYKMOGo 
 
+Setup:
+  pip install pygame
+  cd path/to/FrogHop
+python main.py
+
+
 Game Overview 
 - Game title: 
   Frog Hop
