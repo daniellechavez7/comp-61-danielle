@@ -1,0 +1,46 @@
+# INTEGERS 
+
+age = 19
+players = 2 
+quantity = 5
+
+#print(f"You are {age} years old")
+#print(f"We have {players} players")
+
+# FLOAT 
+
+gpa = 4.0 
+distance = 2.5 
+
+#print(f"My gpa is {gpa}")
+#print(f"I walked {distance} miles")
+
+#STRING
+
+name = "Danielle"
+major = "Math"
+
+#print(f"My name is {name}")
+#print(f"My major is {major}")
+
+#BOOLEAN
+
+online = True 
+for_sale = False
+running = True 
+
+#print(f"Are you online?: {online}")
+#print(f"Is the item for sale?: {for_sale}")
+#print(f"Game running: {running}")
+
+x = 1
+y = 2
+z = 3
+
+x = y = z = 1 
+
+#print(x)
+#print(y)
+#print(z)
+
+

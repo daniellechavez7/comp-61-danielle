@@ -84,3 +84,32 @@ class FancyDict:
 fancyDict = FancyDict()
 fancyDict.getUserInput()
 fancyDict.display_sum()
+
+import random
+
+# Initialize a 3x3 grid with random 0s and 1s
+visual_two_d_list = []
+for i in range(3):
+    visual_line = [random.randint(0, 1) for j in range(3)]
+    visual_two_d_list.append(visual_line)  # Append a copy of the line
+
+# Print the initial grid (for debugging)
+for row in visual_two_d_list:
+    print(row)
+
+# Get user input
+input_x = int(input("input x position (0-2): "))
+input_y = int(input("input y position (0-2): "))
+
+# Check the cell and update it accordingly
+if visual_two_d_list[input_x][input_y] == 1:
+    visual_two_d_list[input_x][input_y] = "X"
+    print("You lose :(")
+else:
+    visual_two_d_list[input_x][input_y] = "_"
+    print("Keep going")
+
+# Print the updated grid
+for row in visual_two_d_list:
+    print(row)
+
